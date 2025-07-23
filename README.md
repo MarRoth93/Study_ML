@@ -8,7 +8,7 @@ This repository collects short notebooks and examples created while reinforcing 
 Introductory mathematics used in machine learning.
 
 - **01_vector_operations.ipynb** – Walkthrough of fundamental vector math with NumPy.  Covers vector definitions, addition, subtraction and scalar multiplication, along with small practical examples.
-- **vector_operations.ipynb** – Extended notebook on vector operations.  Includes additional feature engineering examples such as customer behavior analysis.
+- **02_modulus_and:inner_product.ipynb** – Explores vector modulus (magnitude) and the inner (dot) product using NumPy and Matplotlib visualizations.
 
 ### `supervised_learning`
 Experiments with classical regression algorithms using scikit‑learn.
