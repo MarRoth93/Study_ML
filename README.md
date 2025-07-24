@@ -8,11 +8,16 @@ This repository collects short notebooks and examples created while reinforcing 
 Introductory mathematics used in machine learning.
 
 - **01_vector_operations.ipynb** – Walkthrough of fundamental vector math with NumPy.  Covers vector definitions, addition, subtraction and scalar multiplication, along with small practical examples.
-- **02_modulus_and:inner_product.ipynb** – Explores vector modulus (magnitude) and the inner (dot) product using NumPy and Matplotlib visualizations.
+- **02_modulus_and_inner_product.ipynb** – Explores vector modulus (magnitude) and the inner (dot) product using NumPy and Matplotlib visualizations.
+- **03_vector_projections.ipynb** – Connects the cosine rule with the dot product, offering geometric intuition.
+- **04_vector_projections.ipynb** – Detailed explanation of scalar and vector projections with practical examples.
 
 ### `supervised_learning`
 Experiments with classical regression algorithms using scikit‑learn.
 
 - **01_basic_regression.ipynb** – Generates synthetic data and trains a linear regression model.  Demonstrates baseline evaluation, pipeline construction, regularization with `Ridge`, cross‑validation and bias–variance analysis.
 
+
+### `Eeg_analysis` and `Fmri_analysis`
+Placeholders for future notebooks exploring EEG and fMRI data.
 
