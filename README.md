@@ -11,6 +11,8 @@ Introductory mathematics used in machine learning.
 - **02_modulus_and_inner_product.ipynb** – Explores vector modulus (magnitude) and the inner (dot) product using NumPy and Matplotlib visualizations.
 - **03_vector_projections.ipynb** – Connects the cosine rule with the dot product, offering geometric intuition.
 - **04_vector_projections.ipynb** – Detailed explanation of scalar and vector projections with practical examples.
+- **05_changing_basis.ipynb** – Demonstrates how to change coordinate bases using dot products and projections.
+- **06_basis_space_independence.ipynb** – Introduces vector spaces, linear independence and span with practical ML links.
 
 ### `supervised_learning`
 Experiments with classical regression algorithms using scikit‑learn.
