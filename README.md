@@ -26,3 +26,9 @@ Experiments with classical regression algorithms using scikit‑learn.
 
 ### `Eeg_analysis` and `Fmri_analysis`
 Placeholders for future notebooks exploring EEG and fMRI data.
+
+### `additional_documents`
+Supplementary spreadsheets containing reference notes from documentation.
+
+- **scikit_documentations.xlsx** – Highlights and reminders taken from the scikit-learn user guide.
+- **tensorflow_documentations.xlsx** – Key points summarised from the TensorFlow documentation.
