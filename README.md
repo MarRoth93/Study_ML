@@ -18,7 +18,9 @@ Introductory mathematics used in machine learning. The notebooks have been reorg
 - **07_application_of_changing_basis.ipynb** – Applies basis changes in small numerical examples.
 
 #### `02_matrices`
-- **09_Matrices_and_vectors.ipynb** – First look at matrices and how they interact with vectors.
+- **01_Matrices_and_vectors.ipynb** – First look at matrices and how they interact with vectors.
+- **02_how_matrices_transform_space.ipynb** – Visualises how matrices act as linear transformations on vector spaces.
+- **03_Types_of_matrix_transformation.ipynb** – Illustrates scaling, rotations and other common transformations.
 
 ### `supervised_learning`
 Experiments with classical regression algorithms using scikit‑learn.
