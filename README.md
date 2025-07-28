@@ -22,6 +22,9 @@ Introductory mathematics used in machine learning. The notebooks have been reorg
 - **02_how_matrices_transform_space.ipynb** – Visualises how matrices act as linear transformations on vector spaces.
 - **03_Types_of_matrix_transformation.ipynb** – Illustrates scaling, rotations and other common transformations.
 - **04_Matrix_Transformation_Composition.ipynb** – Shows how sequential matrix operations combine via multiplication and why order matters.
+- **05_Gaussian_Elimination_Apples_Bananas_Carrots.ipynb** – Step-by-step example of solving a linear system with Gaussian elimination using a simple fruit pricing analogy.
+- **06_Inverse_Matrix_Gaussian_Elimination.ipynb** – Demonstrates computing a matrix inverse by solving multiple systems via Gaussian elimination.
+- **07_Determinants_and_Inverses.ipynb** – Introduces determinants, how they relate to area/volume scaling and their connection to invertibility.
 
 ### `supervised_learning`
 Experiments with classical regression algorithms using scikit‑learn.
