@@ -1,0 +1,129 @@
+{
+  "model_info": {
+    "algorithm": "LightGBM",
+    "type": "Gradient Boosting Regression",
+    "library": "lightgbm",
+    "scikit_learn_version": "1.6.1",
+    "training_date": "2025-07-29T11:55:25.682129",
+    "model_size_mb": 2.74
+  },
+  "performance": {
+    "test_rmse": 0.4353,
+    "test_mae": 0.2831,
+    "test_r2": 0.8554,
+    "cv_rmse_mean": 0.4541,
+    "cv_rmse_std": 0.0104,
+    "prediction_error_pct": 16.3
+  },
+  "data_info": {
+    "dataset": "California Housing",
+    "n_samples_total": 20640,
+    "n_features": 8,
+    "train_size": 12384,
+    "val_size": 4128,
+    "test_size": 4128,
+    "target_range": {
+      "min": 0.14999,
+      "max": 5.00001,
+      "mean": 2.068558169089147
+    }
+  },
+  "training_config": {
+    "validation_strategy": "nested_cross_validation",
+    "outer_cv_folds": 5,
+    "inner_cv_folds": 3,
+    "scoring_metric": "neg_root_mean_squared_error",
+    "hyperparameter_search": "GridSearchCV",
+    "best_params": {
+      "model__learning_rate": 0.05,
+      "model__min_child_samples": 20,
+      "model__num_leaves": 63
+    },
+    "random_state": 42
+  },
+  "features": {
+    "feature_names": [
+      "MedInc",
+      "HouseAge",
+      "AveRooms",
+      "AveBedrms",
+      "Population",
+      "AveOccup",
+      "Latitude",
+      "Longitude"
+    ],
+    "preprocessing": {
+      "numeric_features": [
+        "MedInc",
+        "HouseAge",
+        "AveRooms",
+        "AveBedrms",
+        "Population",
+        "AveOccup",
+        "Latitude",
+        "Longitude"
+      ],
+      "categorical_features": [],
+      "scaling": "StandardScaler",
+      "encoding": "OneHotEncoder"
+    },
+    "feature_importance": {
+      "Latitude": {
+        "importance": 5197.0,
+        "importance_pct": 16.76451612903226
+      },
+      "Longitude": {
+        "importance": 5055.0,
+        "importance_pct": 16.306451612903224
+      },
+      "AveOccup": {
+        "importance": 4180.0,
+        "importance_pct": 13.483870967741934
+      },
+      "MedInc": {
+        "importance": 3794.0,
+        "importance_pct": 12.238709677419354
+      },
+      "Population": {
+        "importance": 3481.0,
+        "importance_pct": 11.229032258064516
+      },
+      "AveRooms": {
+        "importance": 3330.0,
+        "importance_pct": 10.741935483870968
+      },
+      "AveBedrms": {
+        "importance": 3114.0,
+        "importance_pct": 10.04516129032258
+      },
+      "HouseAge": {
+        "importance": 2849.0,
+        "importance_pct": 9.190322580645162
+      }
+    }
+  },
+  "business_context": {
+    "use_case": "House price prediction",
+    "target_variable": "median_house_value_100k",
+    "geographic_scope": "California, USA",
+    "data_vintage": "1990 Census",
+    "typical_error": "$43k",
+    "model_explains": "85.5% of price variation"
+  },
+  "deployment": {
+    "ready_for_production": true,
+    "monitoring_metrics": [
+      "RMSE",
+      "MAE",
+      "R\u00b2",
+      "prediction_drift"
+    ],
+    "retraining_triggers": [
+      "performance_degradation",
+      "data_drift",
+      "monthly_schedule"
+    ],
+    "input_validation": "required",
+    "output_format": "price_in_100k_units"
+  }
+}
