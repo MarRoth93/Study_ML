@@ -30,6 +30,12 @@ Introductory mathematics used in machine learning. The notebooks have been reorg
 Experiments with classical regression algorithms using scikit‑learn.
 
 - **01_basic_regression.ipynb** – Generates synthetic data and trains a linear regression model. Demonstrates baseline evaluation, pipeline construction, regularisation with `Ridge`, cross‑validation and bias–variance analysis.
+- **02_ridge_regression.ipynb** – Deep dive into Ridge regularisation and model stability.
+- **03_lasso_regression.ipynb** – Introduces Lasso for automatic feature selection.
+- **04_lightgbm_regression.ipynb** – Demonstrates gradient boosting with LightGBM.
+- **05_capstone_regression.ipynb** – Complete pipeline with nested cross-validation and performance analysis.
+- **06_when_to_select_what.ipynb** – Decision framework outlining when to choose each algorithm.
+- `model_artifacts/` – Saved models, preprocessing pipeline and performance report.
 
 ### `Eeg_analysis` and `Fmri_analysis`
 Placeholders for future notebooks exploring EEG and fMRI data.
