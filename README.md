@@ -25,6 +25,8 @@ Introductory mathematics used in machine learning. The notebooks have been reorg
 - **05_Gaussian_Elimination_Apples_Bananas_Carrots.ipynb** – Step-by-step example of solving a linear system with Gaussian elimination using a simple fruit pricing analogy.
 - **06_Inverse_Matrix_Gaussian_Elimination.ipynb** – Demonstrates computing a matrix inverse by solving multiple systems via Gaussian elimination.
 - **07_Determinants_and_Inverses.ipynb** – Introduces determinants, how they relate to area/volume scaling and their connection to invertibility.
+- **08_Summary_of_concepts.ipynb** – Consolidates key matrix ideas in one place.
+- **09_example_PCA.ipynb** – Applies PCA for dimension reduction using scikit-learn.
 
 ### `supervised_learning`
 Experiments with classical regression algorithms using scikit‑learn.
