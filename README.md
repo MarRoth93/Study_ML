@@ -28,6 +28,9 @@ Introductory mathematics used in machine learning. The notebooks have been reorg
 - **08_Summary_of_concepts.ipynb** – Consolidates key matrix ideas in one place.
 - **09_example_PCA.ipynb** – Applies PCA for dimension reduction using scikit-learn.
 
+#### `transcripts`
+Transcripts of mathematics on machine learning lectures.
+
 ### `supervised_learning`
 Experiments with classical regression algorithms using scikit‑learn.
 
@@ -38,6 +41,11 @@ Experiments with classical regression algorithms using scikit‑learn.
 - **05_capstone_regression.ipynb** – Complete pipeline with nested cross-validation and performance analysis.
 - **06_when_to_select_what.ipynb** – Decision framework outlining when to choose each algorithm.
 - `model_artifacts/` – Saved models, preprocessing pipeline and performance report.
+
+### `datascience`
+General data-science workflows collected into themed subfolders:
+- `01_Scraping`
+- `02_SQL`
 
 ### `Eeg_analysis` and `Fmri_analysis`
 Placeholders for future notebooks exploring EEG and fMRI data.
