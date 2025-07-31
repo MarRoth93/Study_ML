@@ -1,0 +1,14 @@
+description = "Convert all .txt files to .md files with identical content, wrapped in structured Markdown format."
+
+prompt = """
+You are working in a local project directory.
+
+Your task is:
+1. Find all `.txt` files in the current directory.
+2. For each one, create a corresponding `.md` file with the same filename (but ending in `.md`).
+3. Copy the content **exactly as-is** — do not summarize, reword, or skip anything.
+4. Format each Markdown file as follows:
+   - Use the original filename as the H1 title: `# filename.txt`
+   - Put the entire file content inside a fenced code block (```)
+
+5. **Important:** Never delete or change the original `.txt` files.
