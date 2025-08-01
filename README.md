@@ -43,9 +43,14 @@ Experiments with classical regression algorithms using scikit‑learn.
 - `model_artifacts/` – Saved models, preprocessing pipeline and performance report.
 
 ### `datascience`
-General data-science workflows collected into themed subfolders:
-- `01_Scraping`
-- `02_SQL`
+General data-science workflows organised into subfolders:
+- `01_Scraping/`
+  - `unstructured_notebooks/`
+- `02_SQL/`
+  - `IBM CLOUD/`
+  - `SQL in Python/`
+  - `Script/`
+  - `pdfs/`
 
 ### `Eeg_analysis` and `Fmri_analysis`
 Placeholders for future notebooks exploring EEG and fMRI data.
