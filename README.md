@@ -45,12 +45,10 @@ Experiments with classical regression algorithms using scikit‑learn.
 ### `datascience`
 General data-science workflows organised into subfolders:
 - `01_Scraping/`
-  - `unstructured_notebooks/`
 - `02_SQL/`
-  - `IBM CLOUD/`
-  - `SQL in Python/`
-  - `Script/`
-  - `pdfs/`
+- `03_Data_analysis/`
+- `04_Model_developement/`
+- `05_advanced_plotting/`
 
 ### `Eeg_analysis` and `Fmri_analysis`
 Placeholders for future notebooks exploring EEG and fMRI data.
