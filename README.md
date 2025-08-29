@@ -17,7 +17,7 @@ Introductory mathematics used in machine learning. The notebooks have been reorg
 - **06_basis_space_independence.ipynb** – Introduces vector spaces, linear independence and span with practical ML links.
 - **07_application_of_changing_basis.ipynb** – Applies basis changes in small numerical examples.
 
-#### `02_matrices`
+#### `02_matrices_01`
 - **01_Matrices_and_vectors.ipynb** – First look at matrices and how they interact with vectors.
 - **02_how_matrices_transform_space.ipynb** – Visualises how matrices act as linear transformations on vector spaces.
 - **03_Types_of_matrix_transformation.ipynb** – Illustrates scaling, rotations and other common transformations.
@@ -27,6 +27,9 @@ Introductory mathematics used in machine learning. The notebooks have been reorg
 - **07_Determinants_and_Inverses.ipynb** – Introduces determinants, how they relate to area/volume scaling and their connection to invertibility.
 - **08_Summary_of_concepts.ipynb** – Consolidates key matrix ideas in one place.
 - **09_example_PCA.ipynb** – Applies PCA for dimension reduction using scikit-learn.
+
+#### `02_matrices_02`
+- **01_Einstein_Summation_and_Dot_Product.ipynb** – Uses Einstein summation to derive and compute dot products concisely with NumPy.
 
 #### `transcripts`
 Transcripts of mathematics on machine learning lectures.
@@ -54,6 +57,7 @@ General data-science workflows organised into subfolders:
 - `03_Data_analysis/` – Cleaning and exploratory analysis notebooks.
 - `04_Model_developement/` – Model evaluation, refinement and a sample house-price project.
 - `05_advanced_plotting/` – Matplotlib, Plotly and Dash visualisation examples with a summary notebook.
+- `06_machine_learning/` – ML exercises (regression, classification, clustering) and a summary notebook.
 
 ### `Eeg_analysis` and `Fmri_analysis`
 Placeholders for future notebooks exploring EEG and fMRI data.
