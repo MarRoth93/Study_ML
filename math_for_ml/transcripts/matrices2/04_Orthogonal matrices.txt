@@ -1,0 +1,92 @@
+Now, it's going to be really
+useful if we can make a transformation
+matrix whose column vectors make up a new basis, all of whoms't vectors
+are perpendicular or what's called
+Orthogonal to each other. In this video,
+we're going to look at this and why this is. But first, I want you to find a new operation on the matrix
+called the transpose. This is where we interchange all the elements of the rows
+and columns of the matrix, so I'll denote the transpose
+as T and I'll say that the ijth element of
+the transpose of A, is equal to the elements on
+the opposite diagonal A_ji. So if I had a matrix
+like 1,2,3,4, and I wanted to
+know its transpose, then I will interchange
+the elements that are off the diagonal. So the one and the four stay
+where they are. Because if is, I find
+i and j are the same; 1,1 1,1 they would stay the
+same, the same for 2,2. But the element 1,2 interchange to the element
+2,1 so they go like that. So 1,2,3,4 becomes, when
+I transpose it 1,3,2,4. Now, let's imagine that I have a square matrix of
+dimension n by n, it defines a transformation with a new basis and the columns of that
+transformation matrix A. Some vectors a_1, a_2 that are the basis vectors in the new space as
+we've said before and I'm going to make this a special matrix
+while I impose the condition that these vectors are orthogonal to each other
+and they have unit length. That is, a_i dotted with a_j is equal to zero if
+i isn't equal to j, that is they're orthogonal, and it's equal to one
+if i is equal to j, that is they are of unit length. Now, let's think about
+what happens if I multiply this matrix on the left
+by a transpose. So A transpose is going to
+be given by just flipping the rows and columns of all of the elements across
+the leading diagonal of A. So that is, I'm going to have a_1 is going
+to become a row, a_2 is going to become
+the next row all the way down to a_n because I flip all of the elements across
+the leading diagonal. So while I multiply A_T by A, let's see what happens, it's going to be quite magical. So if I get A_T times A, then I'm going to get, well, the first element here is going to be the first row
+times the first column, and that's a_1 dotted
+with a_1, and that's one. The second element here, the first row and
+the second column is a_1 dotted with a_2
+and that's zero, and a_1 dot a_3 all the way
+up to a_n is going to give me a whole series of zeros where
+this guy remember is a_n. Then when I do the second row
+on the first column, I'm going to get another zero. I want to do
+the second one and the second column I'm
+going to get a one. Second row, third column
+zero all the way across. I want to do the third one, I'm going to get the same again, I'm going to get zero zero. It only says it's a_3 times a_3, and that's going to be
+that element all the way across and what I'm
+gradually building up here, is I'm building up
+the identity matrix. So what I found is that A_t times A gives me the identity matrix, and what that means is, is that A_T is
+a valid inverse of A. Which is really kind of neat. A set of unit length
+basis vectors that are all
+perpendicular to each other are called an
+orthonormal basis set, and the matrix composed of them is called
+an orthogonal matrix. One thing also to know about an orthogonal matrix is that because all the basis vectors, any of unit length, it must scale space
+by a factor of one. So the determinant of
+an orthogonal matrix must be either plus or minus one. The minus is what arises
+in the new basis, if the new basis vector
+set flits space around. They stay inverted, they
+make it left-handed. Notice that if A_T is
+the inverse then I should be able to post multiply A by
+A_T and get the identity. So I can do this
+on the way round. Which also means by
+the same logic that the rows of the orthogonal matrix
+are orthonormal, as well as the columns
+which is neat, and we saw in the last
+video that actually the inverse is the matrix that does the reverse
+transformation. So the transpose matrix of an orthonormal basis
+vector set is itself another orthogonal basis vector
+set which is really neat. Now, remember that in
+the last module on vectors we said that
+transforming a vector to a new coordinate system
+was just taking the projection or
+dot product of that vector, so say that's the vector, with each of the basis vectors
+so basis factor this one, basis factor that one, and so on so long as those basis vectors were orthogonal to each other. If you want to pause and think
+about that for a moment in the light of all we've
+learned about matrices, just look and think
+about this for a moment. Now in data science
+what we're really saying here is that
+wherever possible, we want to use an
+orthonormal basis vector set when we transform our data. That is, we want
+our transformation matrix to be an orthogonal matrix. That means the inverse
+is easy to compute. It means the transmission is reversible because it
+doesn't collapse space. It means that the projection
+is just the dot product. Lots of things are nice
+and pleasant, and easy. If I arrange the basis
+vectors in right order, then the determinant is one, and that's an easy way
+to check and if they aren't just exchange
+a pair of them and actually then they will be determinant one rather
+than the minus one. So what we've done
+in this video is look at the transpose
+and that's led us to find out about the most
+convenient basis factor set of all which is the
+orthonormal basis factor set which together make
+the orthogonal matrix whose inverse is its transpose.
+So that's really cool.
