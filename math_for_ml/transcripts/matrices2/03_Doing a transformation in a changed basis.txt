@@ -1,0 +1,50 @@
+Now, let's look at how we
+do the transformation of a vector that's already
+in a change basis. Last time, we looked
+at bears basis. Bears basis had
+a first axis of three, one and a second axis
+of one, one. Let's say I have a vector x, y defined in bears basis. As I want to transform
+it by doing something like a rotation of 45 degrees. But the problem is, I
+don't know how to write a 45 degree rotation in bears
+funny coordinate system. I only know how to write down a 45 degree rotation
+in my normal 1, 0, 0, 1 system. So in my system which is 1, 0, 0, 1 a 45 degree
+rotation rotates 1, 0 up like that. So if it's still
+a unit vector at 1, 0 over root 2, 1, over root 2, that is a normalized 1, 1. It takes 0, 1 round to
+minus 1 over root 2, 1 over root 2. That is that 45 degrees there, that 45 degrees there. So I can write it down
+the rotation in my notation. Let's call it R being
+a 45 degree rotation, as being 1 over root 2 times 1, 1 minus 1, 1. That's what a 45 degree
+rotation is in my world. So what I need to do is first
+transform the vector x, y into my basis. I do that by multiplying it by B. Then I can apply my nice sensible rotation R to that vector that's
+now in my basis. So what I get here when I do B, I've got the vector in
+my coordinate frame. Now the problem is bear
+doesn't care about my world, he wants to get
+the rotation in his basis. So then I have to transform
+the resulting vector, back into bears basis. I do that by applying
+B to the minus 1. B to the minus 1, I get by flipping the terms on
+the leading diagonal, taking minus
+the off-diagonal terms, and dividing by
+the determinant here which is 2 so I
+multiply it by a half. So that then gives me, the vector back in bears frame. So overall what I've done, is I've done B to
+the minus 1 times R, times B. What that's giving me, is it's given me the rotation, in bears coordinate system.
+Which is really neat. So now what we have
+to do is do the sums. When we do that R,
+B gives us this, and B to the -1 RB gives us this. I've written them down there,
+so pause and ponder if you want to verify
+those on your own. So this is what a 45 degree rotation looks like in bears coordinate system. Notice that it's completely different to the one
+in my standard basis. It isn't very easy necessarily or obvious to
+intuit just out of your head, you have to do the calculation. So if you want to
+do some translation but in some funny basis, this equation B to
+the minus 1 RB, is going to be very useful. To step back here, the point
+is that if we want to transform to normal form
+normal coordinate systems, then the translation
+matrices also change. We have to be mindful of that. This is the algebra
+you see all the time. We've got the
+transformation matrix R, wrapped around by B, B is the minus 1, that does the translation from my world to the world of
+the new basis system. So thanks a lot bear, you really helped us out to
+understand all this stuff. So what we've done in these
+two videos is we've looked at how the numbers in
+a vector change, where we change the basis. We thought about the coordinate
+systems and how to do transformations in non-orthogonal
+coordinate systems. It's been quite hard work, but this really sets us up for example in principal
+component analysis, to operate in
+different basis systems.
