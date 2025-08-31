@@ -1,0 +1,133 @@
+[MUSIC] Okay, so let's put all this together. Let's use our transformations
+knowledge and our basis knowledge in order
+to do something quite tricky. And see if we can't actually
+make our life quite simple. What I want to do here is know what
+a vector looks like when I reflect it in some funny plane. For example, the way this board works,
+when I write on the whiteboard here, if you're looking at it,
+all the writing would appear mirrored. But what we do to make that work is we
+reflect everything in post production, left-right, and
+then everything comes out okay. The example we're going to do here
+asks what the reflection of Bear, say, something in a mirror
+would look like to me if the mirror was off at some funny angle. Now my first challenge is going to be
+that I don't know the plane of the mirror very well. But I do know two vectors in the mirror,
+(1, 1, 1) and (2, 0, 1). And I've got a third vector,
+which is out of the plane of the mirror, which is at (3, 1, -1),
+that's my third vector. So I've got vectors v1, v2, and v3, and these two guys are in
+the plane of the mirror. We could draw it something like v1 and
+v2, and they're in some plane like this,
+and v3 is out of the plane. So I have got v3 there, v1, and v2. So first let us do
+the Gram-Schmidt process and find some orthonormal vectors describing
+this plane and its normal v3. So my first vector e1 is going to be
+just the normalised version of v1. v1 here is of length root 3, 1 squared plus 1 squared plus
+1 squared all square rooted. So it's going to be over root 3 times (1,
+1, 1), that's a normalised version of v1. So then we can carry on, and I can find u2 = v2- some number of e1's. So then the sum number's going to
+be a projection of v2 onto e1, times e1. So that's going to be (2, 0, 1) -(2, 0,1) dotted with e1, which is 1 over root 3, (1,1,1) times 1 over root 3 (1,1,1),
+because that's e1. So that's (2, 0, 1) minus,
+the root 3s are going to come outside, so I can just have them being a third. (2, 0, 1) dotted with (1, 1, 1)
+is 2 plus 0 plus 1 is 3, so that actually goes and
+has a party and becomes 1. And yeah, okay, I confess,
+I fixed the example. So it's (2, 0, 1)-(1,1,1), which is going to give me
+(1, -1, 1-1 is 0). So (1 -1, 0), that's u2. Now if I want to normalize u2, I can say e2 is equal to
+the normalised version of u2. Which is just 1 over root 2 times (1 -1, 0). So then I just need to find u3, and
+I can do the same again with u3. I can say that that's equal to v3-
+(the projection of v3 onto e1), -(the projection of v3 onto e2). So that's going to be (3, 1, -1)- (3,1,-1) dotted with 1 over root 3 (1, 1, 1)], and that's a number. And it's going in
+the direction of the unit vector v1- v3 dotted with e2. So that's (3, 1, -1) dotted
+with 1 over root 2 (1, -1, 0), times e2, which is 1 over root 2 (1, -1, 0). So it's quite a complicated sum. But I've got an answer
+here which I can do. (3, 1, -1) minus, the 1 over root 3s come out again, 3 plus 1 minus 1 is 3, so that goes. Then I've got (1, 1, 1)
+there, so that becomes 1. Minus, the halves are going to come out,
+the 1 over root 2s. I've got 3 minus 1 minus 0, so that's 2, so they cancel and
+become one again. As I said,
+I fixed the example to make my life easy. So then I've got (3, 1, -1)
+-(1, 1, 1)-(1, -1, 0). So therefore,
+I get an answer for u2 being (3, -1, -1), so that's 1. 1 minus 1 is 0, minus -1 is plus 1, -1 minus 1 is -2. And so I can then normalize that and
+get e3. So e3 is just the normalised
+version of that, which is going to be 1 over root 6 of
+(1, 1, -2). Now let's just check, so
+(1, 1, -2) is normal to (1, -1, 0), it is normal to (1,1,1). Those two are normal to each other,
+so they are a normal basis set. Just need to make sure that's 1 over
+root 6, they are all of unit length. So I can write down my new transformation
+matrix, which I'm going to call e. It's the transformation matrix described
+by the basis vectors e1, e2, e3. So I've got e1, e2,
+e3 all written down as column vectors. And that's going to be my transformation
+matrix, that first contains the plane, notice, and
+then contains the normal to the plane. So I've redrawn everything just to get
+it all more compact so we can carry on. We've got our original two vectors v1 and
+v2, and we've defined e1 to be
+the normalised version of v1. And we've defined e2 to be
+the perpendicular part of v2 to e1, normalised to be of unit length. So these all are in a plane, and
+then e3 is normal to that plane. It's the bit of v3 that we can't
+make by projecting on to v1 and v2, then of unit length. Now say I've got a vector r over here, r. Now what I want to do is reflect
+r down through this plane. So I'm going to drop r
+down through this plane. There he is when he intersects the plane. And then out the other side
+to get a vector r prime. And let's say that r has some number like,
+I don't know, (2, 3, 5), (2, 3, 5). Now this is going to be really awkward, this plane's off at some funny
+angle composed of these vectors. And even these basis vectors
+adds up some funny angle, and then how do I drop it down and
+do the perpendicular? There's going to be a lot of trigonometry. But the neat thing here is that I
+can think of r as being composed of a vector that's in the plane, so some
+vector that's composed of e1s and e2s. Sorry, so here's e1 here. And some vector that's normal, so
+some vector that's some number of e3's. And when I reflect it through the bit
+that's in the plane is going to be the same. But this bit that's some number of e3's, this bit here, I'm just going to
+make into minus this bit here. So if I wrote that down as
+a transformation matrix, the transformation matrix in my basis E,
+is going to be to keep the e1 bit the same,
+keep the e2 bit the same. So that's the e1 bit,
+that's the e2 bit, and then reflect the e3 bit from
+being up to being down. (0, 0, -1), so that's a reflection matrix in e3, so
+that's a reflection in the plane. So just by thinking about
+it quite carefully, I can think about what the reflection is. And that T_E is in the basis of the plane,
+not in my basis, but in the basis of the plane. So that is easy to define. And therefore, if I can get
+the vector r defined in the plane's basis vector set, in the E basis,
+I can then do the reflection. And then I can put it back
+into my basis vector set. And then I have the complete
+transformation. So a way of thinking about that
+is that if I've got my vector r, and I'm trying to get it through some
+transformation matrix to r prime. But that's going to be hard,
+that's going to be tricky, but I can transform it,
+into the basis of the plane. So I can make an r in
+the basis of the plane, and I'm going to do that using E to the -1. E to the -1 is the thing that got me into, I've got a vector of mine,
+into Bear's basis, remember. Then I can do my transformation, I can do
+my reflection in the basis of the plane. I can do my reflection transformation and
+then I will get r, That's been transformed, primed,
+in the basis of the plane. Then I can read that back
+into my basis by doing E, because E is the thing that takes Bear's
+vector and puts it back into my basis. So I can avoid the hard thing by going
+round, doing these three operations. So r, E to the minus 1,
+E inverse, T in the E basis, E. If I do those three things,
+I've done the complete transformation, and I get r prime. So this problem reduces to doing
+that matrix multiplication. So we've got that, we've got that,
+so we can just do the math now, and then we'll be done. So I've just put the logic up there so that I can have the space down here for
+later. And I've put the transformation
+we're going to do there. A couple of things to note, one is because
+E, we've carefully constructed by our Gram–Schmidt process to be orthonormal,
+we know that E transpose is the inverse. So calculating the inverse here isn't
+going to be a pain in the neck. The other thing is, compared to
+the situation with Bear where we're changing bases, here we're changing
+from our vector r to Bear's, or actually the plane's coordinate system. Then we're doing the transformation
+of the reflection in the plane, and then we're coming back to our basis. So the E and and the E to the -1
+are flipped compared to the last video, because we're doing the logic
+the other way around. It's quite neat, right? The actual multiplication of doing
+this isn't awfully edifying, it doesn't build you up very much,
+it's just doing some arithmetic. So I'm just going to write it down here,
+and if you want to verify it you can pause the video, and then we'll
+come back and we'll comment on it. So this is TE times the transpose of E,
+then I take that and multiply it by E itself. And I get E TE E transpose, which is this
+guy, simplifies to this guy, so that's T. All comes out quite nicely,
+so that's very, very nice. So then we can apply that to r. So we can say that T times r is equal to T times our vector (2, 3, 5), and
+that's going to give us r prime. And that gives us an answer
+of one-third of (11, 14, 5). So r prime here is equal to
+one third of (11, 14, 5). So that's a process that
+would've been very, very difficult to do with trigonometry. But actually, with transformations, once
+we get into the plane of the mirror, and the normal to the mirror, then it all becomes very easy
+to do that reflection operation. And it's quite magical,
+it's really amazing. So that's really nice, right? It's really cool. So what we've done here is we've
+done an example where we've put everything we've learned about
+matrices and vectors together to describe how to do something fun like
+reflect a point in space in a mirror. This might be useful, for instance, if
+you want to transform images of faces for the purpose of doing facial recognition. Transform my face from being
+like to being like that. And then we could use our neural networks, our machine learning to do
+that facial recognition part. In summary, this week we've gone out
+into the world with matrices and learned about constructing orthogonal
+bases, changing bases, and we've related that back to vectors and
+projections. So it's been a lot of fun. And it sets us up for the next topic,
+which Sam is going to lead, on eigenvalues and eigenvectors. [MUSIC]
