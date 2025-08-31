@@ -30,6 +30,13 @@ Introductory mathematics used in machine learning. The notebooks have been reorg
 
 #### `02_matrices_02`
 - **01_Einstein_Summation_and_Dot_Product.ipynb** – Uses Einstein summation to derive and compute dot products concisely with NumPy.
+- **01b_shadow_projection_quiz.ipynb** – Short quiz reinforcing projection concepts.
+- **02_Matrices_Changing_Basis.ipynb** – Demonstrates performing a basis change with matrices.
+- **02_shadow_projection_quiz.ipynb** – Practice problems on shadow projections.
+- **03_Transform_in_Changed_Basis.ipynb** – Shows how transformations behave after a basis change.
+- **03b_example_change_of_basis.ipynb** – Worked example applying the change-of-basis matrix.
+- **04_Orthogonal_Matrices_Educational.ipynb** – Introduces orthogonal matrices and their properties.
+- **05_Gram_Schmidt_Educational.ipynb** – Explains the Gram–Schmidt process for orthonormalising vectors.
 
 #### `transcripts`
 Transcripts of mathematics on machine learning lectures.
@@ -68,5 +75,3 @@ Supplementary spreadsheets containing reference notes from documentation.
 - **scikit_documentations.xlsx** – Highlights and reminders taken from the scikit-learn user guide.
 - **tensorflow_documentations.xlsx** – Key points summarised from the TensorFlow documentation.
 
-
-test2
