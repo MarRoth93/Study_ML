@@ -37,6 +37,9 @@ Introductory mathematics used in machine learning. The notebooks have been reorg
 - **03b_example_change_of_basis.ipynb** – Worked example applying the change-of-basis matrix.
 - **04_Orthogonal_Matrices_Educational.ipynb** – Introduces orthogonal matrices and their properties.
 - **05_Gram_Schmidt_Educational.ipynb** – Explains the Gram–Schmidt process for orthonormalising vectors.
+- **05b_Gram_Schmidt_exercise.ipynb** – Practice notebook applying the Gram–Schmidt process to concrete examples.
+- **06_Reflecting_in_a_Plane_Notebook.ipynb** – Explores reflections in a plane using matrices and geometric intuition.
+- **06b_Reflecting_in_a_Plane_Notebook.ipynb** – Additional practice on planar reflections with worked examples.
 
 #### `transcripts`
 Transcripts of mathematics on machine learning lectures.
@@ -74,4 +77,3 @@ Supplementary spreadsheets containing reference notes from documentation.
 
 - **scikit_documentations.xlsx** – Highlights and reminders taken from the scikit-learn user guide.
 - **tensorflow_documentations.xlsx** – Key points summarised from the TensorFlow documentation.
-
