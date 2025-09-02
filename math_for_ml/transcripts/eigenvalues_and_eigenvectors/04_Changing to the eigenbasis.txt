@@ -1,0 +1,64 @@
+[MUSIC] So now that we know what eigenvectors are
+and how to calculate them, we can combine this idea with a concept of changing basis
+which was covered earlier in the course. What emerges from this synthesis is
+a particularly powerful tool for performing efficient matrix
+operations called diagonalisation. Sometimes, we need to apply the same
+matrix multiplication many times. For example,
+imagine a transformation matrix T represents the change in location of
+a particle after a single time step. So we can write that our initial position,
+described by vector v0, multiplied by the transformation
+T gives us our new location, v1. To work out where our particle
+will be after two time steps, we can find v2 by simply
+multiplying v1 by T, which is of course the same thing
+as multiplying v0 by T two times. So v2 equals T squared times v0. Now imagine that we expect
+the same linear transformation to occur every
+time step for n time steps. Well we can write vn is T to
+the power of n, times v0. You've already seen how much work it
+takes to apply a single 3D matrix multiplication. So if we were to imagine that T tells
+us what happens in one second, but we'd like to know where our
+particle is in two weeks from now, then n is going to be around 1.2 million,
+i.e., we'd need to multiply T by itself more than a million times,
+which may take quite a while. If all the terms in the matrix
+are zero except for those along the leading diagonal,
+we refer to it as a diagonal matrix. And when raising matrices to powers, diagonal matrices make
+things a lot easier. In fact,
+have a go just now to see what I mean. All you need to do is put each
+of the terms on the diagonal to the power of n and you've got the answer. So in this case, T to the n is a to the n,
+b to the n, and c to the n. It's simple enough, but
+what if T is not a diagonal matrix? Well, as you may have guessed,
+the answer comes from eigen-analysis. Essentially, what we're going to do
+is simply change to a basis where our transformation T becomes diagonal,
+which is what we call an eigen-basis. We can then easily apply our power
+of n to the diagonalized form, and finally transform the resulting
+matrix back again, giving us T to the power of n,
+but avoiding much of the work. As we saw in the section on changing
+basis, each column of our transform matrix simply represents the new location
+of the transformed unit vectors. So, to build our eigen-basis
+conversion matrix, we just plug in each of our
+eigenvectors as columns. C equals eigenvector 1, eigenvector 2, and eigenvector 3 in this case as we
+are using a three-dimensional example. However, don't forget that
+some of these maybe complex, so not easy to spot using
+the purely geometrical approach but they are appear in the maths
+just like the others. Applying this transform, we find ourselves
+in a world where multiplying by T is effectively just a pure scaling, which is another way of saying that it can
+now be represented by a diagonal matrix. Crucially, this diagonal matrix, D, contains the corresponding
+eigenvalues of the matrix T. So D equals lambda 1, lambda 2, and lambda 3, with 0's elsewhere. We're so close now to
+unleashing the power of eigen. The final link that we need
+to see is the following. Bringing together everything we've just
+said, it should now be clear that applying the transformation T is just the same
+as converting to our eigenbasis, applying the diagonalized matrix,
+and then converting back again. So T = CDC inverse, which suggests that T
+squared can be written as CDC inverse,
+multiplied again by CDC inverse. So hopefully you've spotted that
+in the middle of our expression on the right-hand side,
+you've got C multiplied by C inverse. But multiplying a matrix and then by its inverse is just
+the same as doing nothing at all. So we can simply remove this operation. Equals CDDC inverse. And then we can finish
+this expression by saying, well this must be CD squared C inverse. We can of course then generalize
+this to any power of T we'd like. So finally we can say
+that T to the power of n is going to equal CD to the power
+of n multiplied by C inverse. We now have a method which lets
+us apply a transformation matrix as many times as we'd like without
+paying a large computational cost. This result brings together many of
+the ideas that we've encountered so far in this course and in the next video we'll work through
+a short example just to ensure that this approach lines up with our expectations
+when applied to a simple case. See you then. [MUSIC]

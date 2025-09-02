@@ -1,0 +1,88 @@
+[MUSIC] Hopefully, you will all now
+have a reasonable feeling for what an eigen-problem looks like geometrically. So in this video, we're going to formalise
+this concept into an algebraic expression, which will allow us to
+calculate eigenvalues and eigenvectors whenever they exist. Once you've understood this method,
+we'll be in a good position to see why you should be glad that
+computers can do this for you. If we consider a transformation A, what we have seen is that if it has
+eigenvectors at all, then these are simply the vectors which stay on the same
+span following a transformation. They can change length and even point
+in an opposite direction entirely. But if they remain in the same span,
+they are eigenvectors. If we call our eigenvector x,
+then we can say the following expression. Ax = lambda x. Where, on the left hand side, we're applying
+the transformation matrix A to a vector x. And on the right-hand side, we are simply stretching a factor
+x by some scalar factor lambda. So lambda is just some number. We're trying to find values of
+x that make the two sides equal. Another way of saying this is that for
+our eigenvectors, having A apply to them just scales
+their length or does nothing at all, which is the same as scaling
+the length by a factor of 1. So in this equation,
+A is an n dimensional transform, meaning it must be an n
+by n square matrix. The eigenvector x must therefore
+be an n-dimensional vector. To help us find the solutions
+to this expression, we can rewrite it by putting all the terms
+on one side and then factorizing. So (A - lambda I) x = 0. If you're wondering where
+the I term came from, it's just an n by n identity matrix, which
+means it's a matrix the same size as A but with ones along the leading diagonal and
+zeros everywhere else. We didn't need this in
+the first expression we wrote, as multiplying vectors
+by scalars is defined. However, subtracting scalars
+from matrices is not defined, so the I just tidies up the maths,
+without changing the meaning. Now that we have this expression we
+can see that for the left-hand side to equal 0, either the contents of the
+brackets must be 0 or the vector x is 0. So we're actually not interested in
+the case where the vector x is 0. That's when it has no length or direction
+and is what we call a trivial solution. Instead, we must find when
+the term in the brackets is 0. Referring back to the material in
+the previous parts of the course, we can test if a matrix operation will result in
+a 0 output by calculating its determinant. So, det (A - lambda I) = 0. Calculating the determinants manually is a
+lot of work for high dimensional matrices. So let's just try applying this to
+an arbitrary two by two transformation. Let's say, A = (a, b, c, d). Substituting this into our eigen-finding
+expression gives the following. Det (a b c d)- lambda 0 0 lambda. Evaluating this determinant,
+we get what is referred to as the characteristic polynomial,
+which looks like this. So lambda squared -(a + d) lambda + ad - bc = 0. Our eigenvalues are simply the solutions
+of this equation, and we can then plug these eigenvalues back into the original
+expression to calculate our eigenvectors. Rather than continuing with our
+generalized form, this is a good moment to apply this to a simple transformation, for
+which we already know the eigensolution. Let's take the case of a vertical
+scaling by a factor of two, which is represented by
+the transformation matrix A = 1, 0, 0, 2. We can then apply the method
+that we just described and take the determinant of A minus lambda
+I and then set it to zero and solve. So det (1- lambda, 0, 0, 2- lambda) = 1- lambda, 2- lambda, which is of course equal to 0. This means that our equation must
+have solutions at lambda equals 1 and lambda equals 2. Thinking back to our
+original eigen-finding formula, (A - lambda I) x = 0. We can now sub these
+two solutions back in. So thinking about the case
+where lambda = 1, we can say (1- 1, 0, 0, 2- 1) times this x vector, x1 and x2, must equal to (0, 0, 0, 1) x1, x2, therefore we've got 0 and x2 must equal 0. Now, thinking about the case
+where lamda equals 2, at lamda = 2, you get 1- 2, and 2- 2, And then you get of course minus 1, 0, 0, 0, Which equals to minus x1, 0, which equals zero. So what do these two expressions tell us? Well, in the case where our
+eigenvalue lambda equals one, we've got an eigenvector where
+the x2 term must be zero. But we don't really know
+anything about the x1 term. Well, this is because,
+of course any vector that points along the horizontal axis could be
+an eigenvector of this system. So we write that by saying @ lambda = 1, x, our eigenvector, can equal anything
+along the horizontal axis, as long as it's 0 in
+the vertical direction. So we put in an arbitrary parameter t. Similarly for the lambda = 2 case, We can say that our
+eigenvector must equal 0,t. Because as long as it doesn't move
+at all in the horizontal direction, any vector that's purely
+vertical would therefore also be an eigenvector of this system,
+as they all would lie along the same span. So now we have two eigenvalues, and
+their two corresponding eigenvectors. Let's now try the case of a rotation by
+90-degrees anti-clockwise, to ensure that we get the result that we expect which, if
+you remember, is no eigenvectors at all. The transformation matrix corresponding
+to a 90-degree rotation is as follows. A = (0, -1), (1, 0). So applying the formula once again we get the det (0- lambda- 1), (1, 0- lambda), which if you calculate this through, comes out to lambda squared + 1 = 0. Which doesn't have any real
+numbered solutions at all. Hence, no real eigenvectors. We can still calculate some complex
+eigenvectors using imaginary numbers, but this is beyond what we need for
+this particular course. Despite all the fun that we've just been
+having, the truth is that you will almost certainly never have to perform
+this calculation by hand. Furthermore, we saw that our approach
+required finding the roots of a polynomial of order n, i.e.,
+the dimension of your matrix. Which means that the problem
+will very quickly stop being possible by analytical methods alone. So when a computer finds
+the eigensolutions of a 100 dimensional problem it's forced
+to employ iterative numerical methods. However, I can assure you that developing
+a strong conceptual understanding of eigen problems will be much more useful
+than being really good at calculating them by hand. In this video, we translated our
+geometrical understanding of eigenvectors into a robust mathematical expression,
+and validated it on a few test cases. But I hope that I've also convinced
+you that working through lots of eigen-problems, as is often done in engineering
+undergraduate degrees, is not a good investment of your time if you already
+understand the underlying concepts. This is what computers are for. Next video, we'll be referring back
+to the concept of basis change to see what magic happens when you
+use eigenvectors as your basis. See you then. [MUSIC]
