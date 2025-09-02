@@ -41,6 +41,14 @@ Introductory mathematics used in machine learning. The notebooks have been reorg
 - **06_Reflecting_in_a_Plane_Notebook.ipynb** – Explores reflections in a plane using matrices and geometric intuition.
 - **06b_Reflecting_in_a_Plane_Notebook.ipynb** – Additional practice on planar reflections with worked examples.
 
+#### `03_eigenproblems`
+- **01_introduction.ipynb** – Introduction to eigenvalues and eigenvectors and their geometric meaning.
+- **02_special_eigen_cases.ipynb** – Special cases and properties (e.g., repeated eigenvalues, symmetry).
+- **03_calculating_eigenvectors.ipynb** – Methods for computing eigenvalues/eigenvectors with worked examples.
+- **04_changing_to_eigenbasis.ipynb** – Changing to the eigenbasis and diagonalisation for simpler transformations.
+- **05_eigenbasis_example.ipynb** – End‑to‑end example applying the eigenbasis change.
+- **05b_visual_intuation.ipynb** – Visual intuition for eigenvectors/eigenvalues and their effects.
+
 #### `transcripts`
 Transcripts of mathematics on machine learning lectures.
 
