@@ -55,6 +55,12 @@ Experiments with classical regression algorithms using scikit‑learn.
 - **06_when_to_select_what.ipynb** – Decision framework outlining when to choose each algorithm.
 - `model_artifacts/` – Saved models, preprocessing pipeline and performance report.
 
+### `machine_learning`
+Course-based notebooks grouped by course and week. Highlights include:
+- **Course 1** – Fundamentals: Python/NumPy practice, linear regression, feature engineering and logistic regression decision boundaries.
+- **Course 2** – Practical ML: multiclass softmax, ReLU networks in TensorFlow, model evaluation/selection, diagnosing bias–variance, decision trees and tree ensembles.
+- **Course 3** – Unsupervised, recommender systems and RL: k‑means clustering, anomaly detection, content‑ and NN‑based recommenders, and introductory reinforcement learning (e.g., Lunar Lander).
+
 ### `datascience`
 General data-science workflows organised into subfolders:
 - `01_Scraping/` – Web-scraping exercises and an overview notebook.
