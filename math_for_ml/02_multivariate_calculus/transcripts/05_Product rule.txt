@@ -1,0 +1,54 @@
+[MUSIC] Now that we've defined the differentiation
+operation in terms of an exact mathematical formula, it's become clear
+that even for relatively simple functions, calculating derivatives
+can be quite tedious. However, mathematicians have found a
+variety of convenient rules that allow us to avoid working through the limit of rise
+over run operation whenever possible. So far, we've met the sum rule and
+the power rule. In this video, we will cover a convenient
+shortcut for differentiating the product of two functions, which sensibly
+enough is called the product rule. It is of course possible to derive
+the product rule purely algebraically but it doesn't really help you to develop
+much insight into what's going on. For all the topics covered in this course, I'd always prefer you came away with
+some degree of intuitive understanding, rather than just watching
+me going through examples. So, let's see if we can make
+any progress by drawing things. Imagine a rectangle where the length
+of one side is the function f(x) and the other side is the function g(x). This means that the product of these two
+functions must give us the rectangle's area, which we can call A(x). Now, consider that if we differentiate
+f(x) g(x), what we're really looking for is the change in area of
+our rectangle as we vary x. So let's see what happens to the area
+when we increase x by some small amount, delta x. A quick footnote here, for
+the case we've shown, we've picked a particular friendly pair of functions,
+where they both happen to increase with x. However, this won't
+necessarily always be the case. But it does just make
+drawing things a lot easier. And the conclusions would
+ultimately be the same. We can now divide up our
+rectangle into four regions, one of which was our original area, A(x). As the total edge length along the top,
+is now f(x + delta x). This means that the width of the new
+region must be the difference between the original width and the new width. And of course,
+the same logic applies to the height. We can now write an expression for
+just the extra area, which we will call delta A. This is the sum of the area
+of the three new rectangles. I want to avoid a drawn out
+conversation about limits. But fundamentally, I hope you can
+see that as delta x goes to 0, although all of the new
+rectangles will shrink, it's the smallest rectangle that
+is going to shrink the fastest. This is the intuition that justifies
+how we can ultimately ignore the small rectangle and leave its contribution to the area out of
+our differential expression altogether. Now that we've got our expression for approximating delta x,
+we return to our original question. What is the derivative
+of A with respect to x? So we want the limit of delta
+A divided by x, ie rise over run, which means we also need to divide
+the right hand side by delta x. We are so close at this point, all we need
+to do is slightly rearrange this equation. So, firstly, by splitting it into
+two fractions, and then secondly, by moving f(x) and
+g(x) out of the numerators. What I hope you can see now is that
+first part contains the definition of the derivative of g(x), and the second
+part contains the derivative of f(x). Which means that we're now ready to
+write down our final expression for the derivative of A with respect to x,
+which has now just been reduced to this. The derivative of A(x) is
+just f(x) g'(x) + g(x) f'(x). So, we can now add the product rule to
+the list of tools in our calculus toolbox. If we want to differentiate the product
+of two functions, f(x) and g(x), we simply find the sum of f(x) g'(x),
+and g(x), f'(x). This is going to come in
+really handy in later videos as we start to deal with some
+more complicated functions. See you then.
+[MUSIC]
