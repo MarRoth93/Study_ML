@@ -5,7 +5,7 @@ This repository collects short notebooks and examples created while reinforcing 
 ## Repository structure
 
 ### `math_for_ml`
-Introductory mathematics used in machine learning. The notebooks have been reorganised into themed subfolders:
+Introductory mathematics used in machine learning. Current subfolders: `01_linear_algebra`, `02_multivariate_calculus`, and `additional_resources`. The notebooks are organised into themed subfolders:
 
 #### `01_vectors`
 - **01_vector_operations.ipynb** – Walkthrough of fundamental vector math with NumPy. Covers vector definitions, addition, subtraction and scalar multiplication with small practical examples.
@@ -50,8 +50,22 @@ Introductory mathematics used in machine learning. The notebooks have been reorg
 - **05_eigenbasis_example.ipynb** – End‑to‑end example applying the eigenbasis change.
 - **06_introduction_pagerank.ipynb** – Introduction to PageRank as an eigenvector problem; includes power iteration intuition.
 
+#### `02_multivariate_calculus`
+Foundations of single‑variable differentiation used later in ML optimisation.
+
+##### `01_calculus`
+- **01_functions.ipynb** – Introduction to functions and notation.
+- **02_riser_over_run.ipynb** – “Rise over run” intuition for slope.
+- **03_definition_of_derivatives.ipynb** – Formal definition of the derivative.
+- **04_examples_and_special_cases.ipynb** – Differentiation examples and special cases.
+- **05_product_rule.ipynb** – Product rule with examples.
+- **06_chain_rule.ipynb** – Chain rule with worked examples.
+- **07_complex_example.ipynb** – Combined rules in a more complex example.
+
+Transcripts for this series are in `math_for_ml/02_multivariate_calculus/transcripts/`.
+
 #### `transcripts`
-Transcripts of mathematics on machine learning lectures.
+Transcripts accompanying the mathematics series. See `math_for_ml/01_linear_algebra/transcripts/` and `math_for_ml/02_multivariate_calculus/transcripts/`.
 
 ### `supervised_learning`
 Experiments with classical regression algorithms using scikit‑learn.
