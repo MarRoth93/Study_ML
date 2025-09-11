@@ -64,8 +64,11 @@ Foundations of single‑variable differentiation used later in ML optimisation.
 
 Transcripts for this series are in `math_for_ml/02_multivariate_calculus/transcripts/`.
 
-#### `transcripts`
+#### Transcripts
 Transcripts accompanying the mathematics series. See `math_for_ml/01_linear_algebra/transcripts/` and `math_for_ml/02_multivariate_calculus/transcripts/`.
+
+#### `additional_resources`
+Formula sheets and reference PDFs supporting the above topics (e.g., linear algebra and multivariate calculus cheat sheets and book excerpts).
 
 ### `supervised_learning`
 Experiments with classical regression algorithms using scikit‑learn.
