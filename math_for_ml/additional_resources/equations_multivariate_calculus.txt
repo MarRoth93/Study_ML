@@ -1,0 +1,97 @@
+# Mathematics for Machine Learning
+## Multivariate Calculus
+
+**Formula sheet**  
+Dr Samuel J. Cooper  
+Prof. David Dye  
+Dr A. Freddie Page  
+
+---
+
+### Definition of a derivative
+
+$$ f'(x) = \frac{df(x)}{dx} = \lim_{\Delta x \to 0} \left( \frac{f(x+\Delta x) - f(x)}{\Delta x} \right) $$
+
+---
+
+### Time saving rules
+
+- **Sum Rule:**
+  $$ \frac{d}{dx} \big(f(x) + g(x)\big) = \frac{d}{dx} f(x) + \frac{d}{dx} g(x) $$
+
+- **Power Rule:**
+  $$ f(x) = ax^b \quad \Rightarrow \quad f'(x) = abx^{b-1} $$
+
+- **Product Rule:**
+  $$ A(x) = f(x)g(x) \quad \Rightarrow \quad A'(x) = f'(x)g(x) + f(x)g'(x) $$
+
+- **Chain Rule:**
+  If $h = h(p)$ and $p = p(m)$, then
+  $$ \frac{dh}{dm} = \frac{dh}{dp} \cdot \frac{dp}{dm} $$
+
+- **Total derivative:**
+  For $f(x, y, z, \dots)$, where each variable depends on parameter $t$,
+  $$ \frac{df}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt} + \frac{\partial f}{\partial z} \frac{dz}{dt} + \dots $$
+
+---
+
+### Derivatives of named functions
+
+1. $$ \frac{\partial}{\partial x} \frac{1}{x} = -\frac{1}{x^2} $$
+2. $$ \frac{\partial}{\partial x} \sin x = \cos x $$
+3. $$ \frac{\partial}{\partial x} \cos x = -\sin x $$
+4. $$ \frac{\partial}{\partial x} e^x = e^x $$
+
+---
+
+### Derivative structures
+
+Let $f = f(x,y,z)$.
+
+- **Jacobian:**
+  $$ J_f = \begin{bmatrix} \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z} \end{bmatrix} $$
+
+- **Hessian:**
+  $$ H_f = \begin{bmatrix}
+  \frac{\partial^2 f}{\partial x^2} & \frac{\partial^2 f}{\partial x \partial y} & \frac{\partial^2 f}{\partial x \partial z} \\
+  \frac{\partial^2 f}{\partial y \partial x} & \frac{\partial^2 f}{\partial y^2} & \frac{\partial^2 f}{\partial y \partial z} \\
+  \frac{\partial^2 f}{\partial z \partial x} & \frac{\partial^2 f}{\partial z \partial y} & \frac{\partial^2 f}{\partial z^2}
+  \end{bmatrix} $$
+
+---
+
+### Taylor Series
+
+- **Univariate:**
+  $$ f(x) = f(c) + f'(c)(x-c) + \frac{1}{2} f''(c)(x-c)^2 + \dots = \sum_{n=0}^{\infty} \frac{f^{(n)}(c)}{n!} (x-c)^n $$
+
+- **Multivariate:**
+  $$ f(x) = f(c) + J_f(c)(x-c) + \frac{1}{2} (x-c)^T H_f(c) (x-c) + \dots $$
+
+---
+
+### Optimization and Vector Calculus
+
+- **Newton-Raphson:**
+  $$ x_{i+1} = x_i - \frac{f(x_i)}{f'(x_i)} $$
+
+- **Gradient:**
+  $$ \nabla f = \begin{bmatrix} \frac{\partial f}{\partial x} \\ \frac{\partial f}{\partial y} \\ \frac{\partial f}{\partial z} \end{bmatrix} $$
+
+- **Directional Gradient:**
+  $$ \nabla f \cdot \hat{r} $$
+
+- **Gradient Descent:**
+  $$ s_{n+1} = s_n - \gamma \nabla f $$
+
+- **Lagrange Multipliers ($\lambda$):**
+  $$ \nabla f = \lambda \nabla g $$
+
+- **Least Squares — $\chi^2$ minimization:**
+  $$ \chi^2 = \sum_i \frac{(y_i - y(x_i; a_k))^2}{\sigma_i} $$
+  Criterion: $\nabla \chi^2 = 0$
+
+  Update rule:
+  $$ a_{\text{next}} = a_{\text{cur}} - \gamma \nabla \chi^2 $$
+  $$ = a_{\text{cur}} + \gamma \sum_i \frac{(y_i - y(x_i; a_k))}{\sigma_i} \frac{\partial y}{\partial a_k} $$
+

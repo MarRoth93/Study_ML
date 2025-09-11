@@ -45,9 +45,10 @@ Introductory mathematics used in machine learning. The notebooks have been reorg
 - **01_introduction.ipynb** – Introduction to eigenvalues and eigenvectors and their geometric meaning.
 - **02_special_eigen_cases.ipynb** – Special cases and properties (e.g., repeated eigenvalues, symmetry).
 - **03_calculating_eigenvectors.ipynb** – Methods for computing eigenvalues/eigenvectors with worked examples.
+- **03b_visual_intuation.ipynb** – Visual intuition for eigenvectors/eigenvalues and their effects.
 - **04_changing_to_eigenbasis.ipynb** – Changing to the eigenbasis and diagonalisation for simpler transformations.
 - **05_eigenbasis_example.ipynb** – End‑to‑end example applying the eigenbasis change.
-- **05b_visual_intuation.ipynb** – Visual intuition for eigenvectors/eigenvalues and their effects.
+- **06_introduction_pagerank.ipynb** – Introduction to PageRank as an eigenvector problem; includes power iteration intuition.
 
 #### `transcripts`
 Transcripts of mathematics on machine learning lectures.

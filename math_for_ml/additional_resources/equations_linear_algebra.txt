@@ -1,0 +1,195 @@
+# Mathematics for Machine Learning: Linear Algebra
+
+## Formula Sheet
+
+---
+
+## Vector Operations
+
+* **Addition (commutative):**
+  \$r + s = s + r\$
+
+* **Scalar Multiplication:**
+  \$2r = r + r\$
+
+* **Vector Norm (Euclidean norm):**
+  \$|r|^2 = \sum\_i r\_i^2\$
+
+* **Dot Product (Inner Product):**
+  \$r \cdot s = \sum\_i r\_i s\_i\$
+
+Properties of dot product:
+
+* Commutative:
+  \$r \cdot s = s \cdot r\$
+
+* Distributive:
+  \$r \cdot (s + t) = r \cdot s + r \cdot t\$
+
+* Associative with scalar multiplication:
+  \$r \cdot (a s) = a (r \cdot s)\$
+
+* Relationship with norm:
+  \$r \cdot r = |r|^2\$
+
+* Geometric Interpretation:
+  \$r \cdot s = |r||s|\cos\theta\$
+
+* **Scalar and Vector Projection:**
+
+Scalar projection of \$s\$ onto \$r\$:
+\$\frac{r \cdot s}{|r|}\$
+
+Vector projection of \$s\$ onto \$r\$:
+\$\frac{r \cdot s}{r \cdot r} r\$
+
+---
+
+## Basis
+
+A basis is a set of \$n\$ vectors that:
+
+1. are not linear combinations of each other (linear independence),
+2. span the space.
+
+The space is then \$n\$-dimensional.
+
+---
+
+## Matrices
+
+* **Matrix Multiplication (2x2 matrix and vector):**
+  \$
+  \begin{pmatrix}
+  a & b \\
+  c & d
+  \end{pmatrix}
+  \begin{pmatrix}
+  e \\
+  f
+  \end{pmatrix}
+  \=
+  \begin{pmatrix}
+  ae + bf \\
+  ce + df
+  \end{pmatrix}
+  \$
+
+* **Scalar multiplication of matrices:**
+  \$A(nr) = n(Ar) = nr'\$
+
+* **Distributive property:**
+  \$A(r + s) = Ar + As\$
+
+* **Identity matrix (2x2):**
+  \$
+  I =
+  \begin{pmatrix}
+  1 & 0 \\
+  0 & 1
+  \end{pmatrix}
+  \$
+
+* **Clockwise rotation by angle \$\theta\$:**
+  \$
+  \begin{pmatrix}
+  \cos\theta & \sin\theta \\
+  -\sin\theta & \cos\theta
+  \end{pmatrix}
+  \$
+
+* **Determinant of 2x2 matrix:**
+  \$
+  \det\begin{pmatrix}
+  a & b \\
+  c & d
+  \end{pmatrix} = ad - bc
+  \$
+
+* **Inverse of 2x2 matrix:**
+  \$
+  \begin{pmatrix}
+  a & b \\
+  c & d
+  \end{pmatrix}^{-1} =
+  \frac{1}{ad - bc}
+  \begin{pmatrix}
+  d & -b \\
+  -c & a
+  \end{pmatrix}
+  \$
+
+* **Matrix multiplication (summation convention):**
+  \$(ab)*{ik} = \sum\_j a*{ij}b\_{jk}\$
+
+---
+
+## Change of Basis
+
+To change from an original basis to a new, primed basis, let the columns of the transformation matrix \$B\$ be the new basis vectors in the original coordinate system:
+
+* Forward transformation:
+  \$B r' = r\$
+
+* Reverse transformation:
+  \$r' = B^{-1} r\$
+
+If a matrix \$A\$ is orthonormal (all columns are unit vectors and orthogonal), then:
+\$A^T = A^{-1}\$
+
+---
+
+## Gram–Schmidt Process for Orthonormal Basis
+
+Given \$n\$ linearly independent vectors \${v\_1, v\_2, \dots, v\_n}\$, the orthonormal basis is obtained as:
+
+* First basis vector:
+  \$e\_1 = \frac{v\_1}{|v\_1|}\$
+
+* Second basis vector:
+  \$u\_2 = v\_2 - (v\_2 \cdot e\_1)e\_1,\quad e\_2 = \frac{u\_2}{|u\_2|}\$
+
+* Similarly, continue for subsequent vectors:
+  \$u\_k = v\_k - \sum\_{j=1}^{k-1}(v\_k \cdot e\_j)e\_j,\quad e\_k = \frac{u\_k}{|u\_k|}\$
+
+---
+
+## Transformations (Reflections, Rotations, etc.)
+
+For a transformation (e.g., reflection) in a new basis \$E\$:
+
+1. Transform into the basis \$E^{-1}\$.
+2. Perform the transformation \$T\_E\$ in the new basis.
+3. Transform back to original basis \$E\$.
+
+Resulting transformation:
+\$r' = E T\_E E^{-1} r\$
+
+---
+
+## Eigenstuff (Eigenvectors and Eigenvalues)
+
+To investigate matrix \$A\$ (size \$n\times n\$), solve:
+\$A x = \lambda x\$
+
+where \$\lambda\$ is the scalar eigenvalue. Eigenvalues satisfy:
+\$(A - \lambda I)x = 0\$
+
+where \$I\$ is the \$n\times n\$ identity matrix.
+
+---
+
+### PageRank Algorithm
+
+The dominant eigenvector of the link matrix \$L\$ can be found using the Power Method:
+
+* Iterative method without damping:
+  \$r\_{i+1} = L r\_i\$
+
+* Iterative method with damping factor \$d\$ (stabilization):
+  \$r\_{i+1} = d L r\_i + \frac{1 - d}{n}\$
+
+---
+
+*(End of Formula Sheet)*
+
