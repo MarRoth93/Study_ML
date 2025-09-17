@@ -49,11 +49,12 @@ Introductory mathematics used in machine learning. Current subfolders: `01_linea
 - **04_changing_to_eigenbasis.ipynb** – Changing to the eigenbasis and diagonalisation for simpler transformations.
 - **05_eigenbasis_example.ipynb** – End‑to‑end example applying the eigenbasis change.
 - **06_introduction_pagerank.ipynb** – Introduction to PageRank as an eigenvector problem; includes power iteration intuition.
+- **06b_PageRank_codingexercise.ipynb** – Hands-on PageRank coding exercise building on the introduction notebook.
 
 #### `02_multivariate_calculus`
 Foundations of single‑variable differentiation used later in ML optimisation.
 
-##### `01_calculus`
+##### `01_foundations`
 - **01_functions.ipynb** – Introduction to functions and notation.
 - **02_riser_over_run.ipynb** – “Rise over run” intuition for slope.
 - **03_definition_of_derivatives.ipynb** – Formal definition of the derivative.
@@ -61,6 +62,11 @@ Foundations of single‑variable differentiation used later in ML optimisation.
 - **05_product_rule.ipynb** – Product rule with examples.
 - **06_chain_rule.ipynb** – Chain rule with worked examples.
 - **07_complex_example.ipynb** – Combined rules in a more complex example.
+
+##### `02_calculus`
+- **01_Variables_constants_context.ipynb** – Clarifies how variables, constants and context interact in multivariate differentiation.
+- **02_differentiate_with_respect_to_anything.ipynb** – Demonstrates differentiating with respect to different variables in complex expressions.
+- **03_the_jacobian.ipynb** – Introduces the Jacobian matrix and interprets it as a multivariate derivative.
 
 Transcripts for this series are in `math_for_ml/02_multivariate_calculus/transcripts/`.
 
