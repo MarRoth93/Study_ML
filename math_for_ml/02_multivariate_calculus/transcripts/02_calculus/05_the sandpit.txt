@@ -1,0 +1,67 @@
+We've now seen that the Jacobian describes
+the gradient of a multivariable system. And if you calculate it for
+a scalar valued multivariable function, you get a row vector pointing up
+the direction of greater slope, with a length proportional
+to the local steepness. In this video,
+I'm going to briefly introduce a kind of gradient playground to help you further
+develop your intuition on the Jacobian, which will also set you up for
+the following exercises. In everyday language,
+we use the word optimisation to describe the process of trying to make
+something as good as it can be. In mathematics, optimisation
+basically means the same thing, as much of the research is dedicated to
+finding the input values to functions, which correspond to either a maximum or
+a minimum of a system. Examples of mathematical optimisation
+in action in the real world include the planning of routes through
+busy cities, the scheduling of production in a factory, or a strategy for
+selecting stocks when trading. If we go back to the simplest function
+we saw in the last section, and we said that we wanted to find
+the location of the maximum, we can simply solve this system analytically
+by first building the Jacobian. And then finding the values of x and
+y which make it equal to 0. However, when the function gets a bit
+more complicated, finding the maximum or minimum can get a bit tricky. If as in this case,
+we still have an analytical expression, then we can at least still find
+the general expression for the Jacobian. But now simply setting it to 0 is
+not only much more complicated but it also is not enough as this function has
+multiple locations with zero gradient. If we assume that all of the maxima and
+minima of this function can be seen in the region we're plotting here,
+then just looking at the surface plot of our function makes it very clear where the
+tallest peak and the deepest trough are. We refer to all the peaks as maxima. But in this case,
+we have a single tallest peak A, which we will call the global maximum, as
+well as several local maxima at C and E. Similarly, we refer to all
+the troughs as minima and we also have a single deepest point at
+D which we call the global minimum, as well as a local minimum at point B. All fairly straightforward,
+however, there's a very important point here that's perhaps so
+obvious that you might have missed it. Imagine standing on the surface
+with its hills and valleys, and we're trying to climb to
+the top of the highest peak. That's no problem, we just look around,
+spot the tallest mountain and walk straight towards it. But what if we're walking at night? This would be much like the scenario
+where we didn't have a nice analytical expression for our function. So we simply aren't able to plot
+the whole function and look around. Perhaps each data point is the result of
+a week-long simulation on a super computer or may be the outcome of
+an actual real world experiment. These night-time scenarios very
+commonly arise in optimisation and can be very challenging to solve. However, if we're lucky,
+we might find that using a torch, we can see the Jacobian vectors painted
+on road signs all around us and each one would say, peak - this way. We would have to remember that although
+the Jacobians all point uphill, they don't necessarily point to
+the top of the tallest hill. And you could find yourself walking up
+to one of the local maxima at C or E. And even worse, when you get there, you'll find that all of the road
+signs are pointing directly at you. This nighttime hill-walking analogy is
+often used when discussing the problem of optimisation. However, it does have
+some misleading features. Such as the fact that when you're
+really evaluating a function, it's no problem to effectively transport
+all over the map by teleportation. As you can try the function
+at many different places, but there's no need to evaluate
+everywhere in between. And the calculation costs the same,
+essentially, no matter how far apart the points are,
+so we're not really walking. Instead, we're going to switch to the
+analogy of a sandpit with an uneven base. In the following exercises,
+you're going to try to find the deepest point of a sandpit by measuring the depth
+of various points using a long stick. This is a very deep sandpit, so once
+you push the stick down to the bottom, there's no way to move it around sideways. You just have pull it out and
+try somewhere else. Also crucially,
+just like our nightwalking scenario, you will have no idea what the peaks and
+troughs looks like at the bottom of the pit because you can't see,
+the sand is in the way. As you work through the exercise, I'm hoping that you will start to pick up on
+a few of the subtleties of optimisation. And hopefully, leave you with
+a few new questions as well, see you next time and
+have fun in the sandpit.
